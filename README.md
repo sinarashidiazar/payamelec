@@ -1,11 +1,22 @@
-# PayamElectronic - سیستم مدیریت فروشگاه الکترونیکی
+# PayamElectronic - سیستم مدیریت فروشگاه الکترونیکی | E-commerce Management System
 
-## 📋 توضیحات پروژه
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-orange.svg)](https://mysql.com)
 
+---
+
+## 📋 توضیحات پروژه | Project Description
+
+**فارسی:**
 PayamElectronic یک سیستم مدیریت فروشگاه الکترونیکی است که با PHP خالص (Pure PHP) توسعه یافته است. این پروژه شامل سیستم مدیریت محصولات، دسته‌بندی، کاربران و سبد خرید می‌باشد.
 
-## ✨ ویژگی‌ها
+**English:**
+PayamElectronic is an e-commerce management system developed with pure PHP. This project includes product management, categorization, user management, and shopping cart systems.
 
+## ✨ ویژگی‌ها | Features
+
+**فارسی:**
 - 🛒 **سیستم سبد خرید**: امکان افزودن و حذف محصولات از سبد خرید
 - 👥 **مدیریت کاربران**: سیستم ثبت‌نام، ورود و احراز هویت
 - 📦 **مدیریت محصولات**: افزودن، ویرایش و حذف محصولات
@@ -15,14 +26,33 @@ PayamElectronic یک سیستم مدیریت فروشگاه الکترونیکی
 - 🎨 **رابط کاربری زیبا**: طراحی ریسپانسیو با Bootstrap
 - 🔒 **امنیت**: سیستم احراز هویت و کنترل دسترسی
 
-## 🛠️ تکنولوژی‌های استفاده شده
+**English:**
+- 🛒 **Shopping Cart System**: Add and remove products from shopping cart
+- 👥 **User Management**: Registration, login and authentication system
+- 📦 **Product Management**: Add, edit and delete products
+- 🏷️ **Product Categorization**: Manage categories and subcategories
+- 🔐 **Admin Panel**: Complete system management admin panel
+- 📧 **Email Verification**: Email verification and password recovery system
+- 🎨 **Beautiful UI**: Responsive design with Bootstrap
+- 🔒 **Security**: Authentication and access control system
 
+## 🛠️ تکنولوژی‌های استفاده شده | Technologies Used
+
+**فارسی:**
 - **PHP 7.4+** - زبان برنامه‌نویسی اصلی
 - **MySQL** - پایگاه داده
 - **Bootstrap 4** - فریمورک CSS
 - **jQuery** - کتابخانه JavaScript
 - **PDO** - اتصال امن به پایگاه داده
 - **SmartMenus** - منوی هوشمند
+
+**English:**
+- **PHP 7.4+** - Main programming language
+- **MySQL** - Database
+- **Bootstrap 4** - CSS framework
+- **jQuery** - JavaScript library
+- **PDO** - Secure database connection
+- **SmartMenus** - Smart menu system
 
 ## 📁 ساختار پروژه
 
