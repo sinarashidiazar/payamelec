@@ -1,165 +1,194 @@
-# PayamElectronic - سیستم مدیریت فروشگاه الکترونیکی | E-commerce Management System
+# 🛒 PayamElectronic — E-commerce Management System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://php.net)
-[![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-orange.svg)](https://mysql.com)
+[![PHP](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-orange.svg)](https://www.mysql.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-4-purple.svg)](https://getbootstrap.com/)
+
+A lightweight **e-commerce management system** built with **pure PHP** (no framework) and **MySQL**. It provides product management, category handling, user authentication, and a fully functional shopping cart — all wrapped in a responsive Bootstrap UI.
 
 ---
 
-## 📋 توضیحات پروژه | Project Description
+## 📋 Description
 
-**فارسی:**
-PayamElectronic یک سیستم مدیریت فروشگاه الکترونیکی است که با PHP خالص (Pure PHP) توسعه یافته است. این پروژه شامل سیستم مدیریت محصولات، دسته‌بندی، کاربران و سبد خرید می‌باشد.
+**PayamElectronic** is a self-contained e-commerce platform developed in pure PHP. It is designed for developers and learners who want a clean, readable codebase without the overhead of a framework. The system includes everything needed to run a small online store: product listing, categorization, user registration, authentication, shopping cart, and a full admin panel.
 
-**English:**
-PayamElectronic is an e-commerce management system developed with pure PHP. This project includes product management, categorization, user management, and shopping cart systems.
+---
 
-## ✨ ویژگی‌ها | Features
+## ✨ Features
 
-**فارسی:**
-- 🛒 **سیستم سبد خرید**: امکان افزودن و حذف محصولات از سبد خرید
-- 👥 **مدیریت کاربران**: سیستم ثبت‌نام، ورود و احراز هویت
-- 📦 **مدیریت محصولات**: افزودن، ویرایش و حذف محصولات
-- 🏷️ **دسته‌بندی محصولات**: مدیریت دسته‌بندی‌ها و زیردسته‌ها
-- 🔐 **پنل مدیریت**: پنل ادمین برای مدیریت کامل سیستم
-- 📧 **تایید ایمیل**: سیستم تایید ایمیل و بازیابی رمز عبور
-- 🎨 **رابط کاربری زیبا**: طراحی ریسپانسیو با Bootstrap
-- 🔒 **امنیت**: سیستم احراز هویت و کنترل دسترسی
+- 🛒 **Shopping Cart** — Add and remove products from the cart
+- 👥 **User Management** — Registration, login, and authentication
+- 📦 **Product Management** — Create, edit, and delete products
+- 🏷️ **Category Management** — Manage categories and subcategories
+- 🔐 **Admin Panel** — Full control over the entire system
+- 📧 **Email Verification** — Email confirmation and password recovery
+- 🎨 **Responsive UI** — Clean design powered by Bootstrap
+- 🔒 **Security** — Authentication and role-based access control
 
-**English:**
-- 🛒 **Shopping Cart System**: Add and remove products from shopping cart
-- 👥 **User Management**: Registration, login and authentication system
-- 📦 **Product Management**: Add, edit and delete products
-- 🏷️ **Product Categorization**: Manage categories and subcategories
-- 🔐 **Admin Panel**: Complete system management admin panel
-- 📧 **Email Verification**: Email verification and password recovery system
-- 🎨 **Beautiful UI**: Responsive design with Bootstrap
-- 🔒 **Security**: Authentication and access control system
+---
 
-## 🛠️ تکنولوژی‌های استفاده شده | Technologies Used
+## 🛠️ Technologies Used
 
-**فارسی:**
-- **PHP 7.4+** - زبان برنامه‌نویسی اصلی
-- **MySQL** - پایگاه داده
-- **Bootstrap 4** - فریمورک CSS
-- **jQuery** - کتابخانه JavaScript
-- **PDO** - اتصال امن به پایگاه داده
-- **SmartMenus** - منوی هوشمند
+| Technology | Purpose |
+|------------|---------|
+| **PHP 7.4+** | Core programming language |
+| **MySQL** | Database |
+| **Bootstrap 4** | CSS framework |
+| **jQuery** | JavaScript library |
+| **PDO** | Secure database connection |
+| **SmartMenus** | Smart navigation menu |
 
-**English:**
-- **PHP 7.4+** - Main programming language
-- **MySQL** - Database
-- **Bootstrap 4** - CSS framework
-- **jQuery** - JavaScript library
-- **PDO** - Secure database connection
-- **SmartMenus** - Smart menu system
+---
 
-## 📁 ساختار پروژه
+## 📁 Project Structure
 
 ```
 payamelec/
-├── index.php                 # فایل اصلی و روتینگ
+├── index.php                 # Entry point & router
 ├── PayamElectronic/
-│   ├── config.php           # تنظیمات پایگاه داده
-│   ├── function.php         # توابع کمکی
-│   ├── Route.php            # کلاس روتینگ
-│   ├── action.php           # عملیات‌های مختلف
-│   ├── Pages/               # صفحات مختلف
-│   │   ├── admin/           # صفحات پنل مدیریت
-│   │   ├── login.php        # صفحه ورود
-│   │   ├── register.php     # صفحه ثبت‌نام
-│   │   ├── profile.php      # صفحه پروفایل
+│   ├── config.php           # Database configuration
+│   ├── function.php         # Helper functions
+│   ├── Route.php            # Routing class
+│   ├── action.php           # Action handlers
+│   ├── Pages/               # Application pages
+│   │   ├── admin/           # Admin panel pages
+│   │   ├── login.php        # Login page
+│   │   ├── register.php     # Registration page
+│   │   ├── profile.php      # User profile page
 │   │   └── ...
-│   ├── Template/            # قالب‌ها و استایل‌ها
-│   │   ├── css/            # فایل‌های CSS
-│   │   ├── js/             # فایل‌های JavaScript
-│   │   ├── img/            # تصاویر
+│   ├── Template/            # Templates & assets
+│   │   ├── css/             # Stylesheets
+│   │   ├── js/              # JavaScript files
+│   │   ├── img/             # Images
 │   │   └── ...
-│   └── upload/             # فایل‌های آپلود شده
-└── README.md               # این فایل
+│   └── upload/              # Uploaded files
+└── README.md                # This file
 ```
-
-## 🚀 نصب و راه‌اندازی
-
-### پیش‌نیازها
-
-- PHP 7.4 یا بالاتر
-- MySQL 5.7 یا بالاتر
-- Apache/Nginx وب سرور
-- Composer (اختیاری)
-
-### مراحل نصب
-
-1. **کلون کردن پروژه:**
-   ```bash
-   git clone https://github.com/yourusername/payamelec.git
-   cd payamelec
-   ```
-
-2. **تنظیم پایگاه داده:**
-   - یک پایگاه داده MySQL با نام `payamelectronic` ایجاد کنید
-   - فایل `PayamElectronic/config.php` را ویرایش کنید:
-   ```php
-   define('SERVERNAME','localhost');
-   define('DB_NAME','payamelectronic');
-   define('DB_USERNAME','your_username');
-   define('DB_PASSWORD','your_password');
-   define('URL','http://localhost/your-project/');
-   ```
-
-3. **ایجاد جداول پایگاه داده:**
-   - جداول مورد نیاز را در پایگاه داده ایجاد کنید
-   - حداقل جداول مورد نیاز: `users`, `products`, `categories`, `basket`
-
-4. **تنظیم مجوزها:**
-   ```bash
-   chmod 755 PayamElectronic/upload/
-   chmod 755 PayamElectronic/img/
-   ```
-
-5. **اجرای پروژه:**
-   - پروژه را در وب سرور محلی خود اجرا کنید
-   - به آدرس `http://localhost/your-project/` مراجعه کنید
-
-## 📖 راهنمای استفاده
-
-### ورود به سیستم
-- برای ورود به پنل مدیریت، از صفحه `/login` استفاده کنید
-- کاربران عادی می‌توانند از صفحه `/register` ثبت‌نام کنند
-
-### مدیریت محصولات
-- در پنل مدیریت، بخش "محصولات" را انتخاب کنید
-- امکان افزودن، ویرایش و حذف محصولات وجود دارد
-
-### مدیریت دسته‌بندی
-- در بخش "دسته‌بندی" می‌توانید دسته‌های جدید ایجاد کنید
-- امکان ایجاد زیردسته‌ها نیز وجود دارد
-
-## 🔧 تنظیمات
-
-### تغییر URL پایه
-در فایل `index.php` خط زیر را ویرایش کنید:
-```php
-define('BASEPATH','/');
-```
-
-### تنظیمات ایمیل
-برای فعال‌سازی سیستم ایمیل، تنظیمات SMTP را در فایل `config.php` اضافه کنید.
-
-## 🤝 مشارکت
-
-ما از مشارکت شما استقبال می‌کنیم! برای مشارکت:
-
-1. پروژه را Fork کنید
-2. یک شاخه جدید ایجاد کنید (`git checkout -b feature/AmazingFeature`)
-3. تغییرات خود را Commit کنید (`git commit -m 'Add some AmazingFeature'`)
-4. به شاخه خود Push کنید (`git push origin feature/AmazingFeature`)
-5. یک Pull Request ایجاد کنید
-
-## 📝 مجوز
-
-این پروژه تحت مجوز MIT منتشر شده است. برای جزئیات بیشتر فایل [LICENSE](LICENSE) را مطالعه کنید.
 
 ---
 
-⭐ اگر این پروژه برای شما مفید بود، لطفاً آن را ستاره دهید!
+## 🚀 Installation
+
+### Prerequisites
+
+- PHP **7.4** or higher
+- MySQL **5.7** or higher
+- Apache / Nginx web server
+- Composer *(optional)*
+
+### Step-by-Step Setup
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/yourusername/payamelec.git
+cd payamelec
+```
+
+**2. Create and configure the database**
+
+Create a MySQL database named `payamelectronic`, then edit `PayamElectronic/config.php`:
+
+```php
+define('SERVERNAME', 'localhost');
+define('DB_NAME',    'payamelectronic');
+define('DB_USERNAME','your_username');
+define('DB_PASSWORD','your_password');
+define('URL',        'http://localhost/your-project/');
+```
+
+**3. Import the database schema**
+
+Create the required tables in your database. At minimum you will need:
+
+- `users`
+- `products`
+- `categories`
+- `basket`
+
+**4. Set folder permissions**
+
+```bash
+chmod 755 PayamElectronic/upload/
+chmod 755 PayamElectronic/img/
+```
+
+**5. Run the project**
+
+Place the project in your web server's root directory and open:
+
+```
+http://localhost/your-project/
+```
+
+---
+
+## 📖 Usage Guide
+
+### Authentication
+
+- Access the admin panel via `/login`
+- New users can register at `/register`
+
+### Product Management
+
+- Go to the **Products** section in the admin panel
+- Add, edit, or delete products as needed
+
+### Category Management
+
+- Use the **Categories** section to create new categories
+- Subcategories are also supported
+
+---
+
+## 🔧 Configuration
+
+### Change Base URL
+
+Edit the following line in `index.php`:
+
+```php
+define('BASEPATH', '/');
+```
+
+### Email Settings
+
+To enable the email system, add your SMTP configuration inside `config.php`.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the project
+2. Create a feature branch
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes
+   ```bash
+   git commit -m "Add some AmazingFeature"
+   ```
+4. Push to the branch
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. Open a **Pull Request**
+
+---
+
+## 📝 License
+
+This project is released under the **MIT License**.
+See the [LICENSE](LICENSE) file for full details.
+
+---
+
+## ⭐ Support
+
+If you find this project useful, please consider giving it a **star** on GitHub — it helps a lot!
+
+---
